@@ -10,22 +10,54 @@ html, body {
 }
 
 
-.bg {
-    position: fixed;
+.slide {
+   display: inline-block;
     margin: 20px;
     margin-bottom: 10px;
     width: 100%;
     height: 100%;
-    background-image: url(../bg.jpeg);
-    background-position:50% 35%;
+}
+.s1{
+    background-image: url(../slide1.jpg);
+    background-position: 50% 35%;
     background-size: cover;
+    transform: translateX(-2300px);
+    opacity: 1;
+    z-index: 18;
+    visibility: hidden;
 }
 
-.bg :hover{
+.s2{
+    background-image: url(../slide2.jpeg);
+    background-position: 50% 35%;
+    background-size: cover;
+    transform: translateX(0px);
+    opacity: 1;
+    z-index: 18;
+    transition: opacity 600ms ease 0s
+}
+.s3{
+    background-image: url(../slide3.jpg);
+    background-position: 50% 35%;
+    background-size: cover;
+    transform: translateX(-1150px);
+    opacity: 1;
+    z-index: 18;
+    visibility: hidden;
+}
+
+/* .bg :hover{
     width: 100%;
     height: 100%;
     background-image: url(../image.jpg);
     background-position:50% 35%;
     background-size: cover;
     
+} */
+
+.left{
+    background-image: url(../desk.jpeg);
+    width: 40%;
+    height: 600px;
+    float: left;
 }
